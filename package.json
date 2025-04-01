@@ -10,15 +10,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@tinymce/tinymce-react": "^6.1.0",
+    "docx": "^9.3.0",
     "draft-js": "^0.11.7",
+    "draft-js-buttons": "^2.0.2",
+    "draft-js-plugins-editor": "^3.0.0",
+    "file-saver": "^2.0.5",
     "firebase": "^11.5.0",
+    "gapi-script": "^1.2.0",
+    "googleapis": "^148.0.0",
+    "lucide-react": "^0.486.0",
+    "quill": "^2.0.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.4.1",
     "react-slate": "^0.5.1",
     "react-toastify": "^11.0.5",
     "slate": "^0.112.0",
+    "slate-history": "^0.110.3",
     "slate-react": "^0.112.1"
   },
   "devDependencies": {
