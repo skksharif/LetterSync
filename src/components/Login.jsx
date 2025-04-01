@@ -24,7 +24,6 @@ export default function Login() {
             setGoogleAccessToken(accessToken);
           }
         });
-        toast.success("You are already logged in");
       } else {
         setUser(null);
         setGoogleAccessToken(null);
