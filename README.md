@@ -31,3 +31,52 @@
    ```bash
    git clone https://github.com/your-username/lettersync.git
    cd lettersync
+Install dependencies Run the following command to install the required dependencies.
+npm install
+2. **Set up Firebase**
+
+- Create a Firebase project at Firebase Console.
+
+- Enable Google Authentication under the "Authentication" section.
+
+- Get your Firebase config details and create a firebase.js file in the src folder with the following content:
+
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "YOUR_FIREBASE_API_KEY",
+  authDomain: "YOUR_FIREBASE_AUTH_DOMAIN",
+  projectId: "YOUR_FIREBASE_PROJECT_ID",
+  storageBucket: "YOUR_FIREBASE_STORAGE_BUCKET",
+  messagingSenderId: "YOUR_FIREBASE_MESSAGING_SENDER_ID",
+  appId: "YOUR_FIREBASE_APP_ID",
+};
+
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+3. Set up Google Cloud
+
+- Go to the Google Cloud Console.
+- 
+- Create a new project and enable the Google Drive API.
+
+- Set up OAuth 2.0 credentials and copy your Client ID.
+
+- Add the Client ID to the CLIENT_ID constant in Login.jsx.
+
+4. Start the project After setting up Firebase and Google Cloud, you can start the project with:
+npm start
+Visit the App Open your browser and go to http://localhost:port. You should now be able to see the LetterSync app.
+
+5. Project Structure
+
+/src
+  /components
+    DraftEditor.js      # The rich text editor component (Draft.js)
+    Login.js            # Google login, authentication, and Google Drive integration
+  firebase.js           # Firebase configuration and initialization
+  App.js                # Main App component
+  index.js              # App entry point
+  /styles
+    Login.css           # Styles for the login and main page
