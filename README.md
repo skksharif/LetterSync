@@ -1,12 +1,33 @@
-# React + Vite
+# LetterSync
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**LetterSync** is a modern web application that allows users to write, edit, and share letters effortlessly with an intuitive editor. It integrates Google authentication and Google Drive to save documents.
 
-Currently, two official plugins are available:
+## Key Technologies
+- **React**: A JavaScript library for building user interfaces.
+- **Firebase Authentication**: User authentication using Google Sign-In.
+- **Google Drive API**: Integration with Google Drive to upload files.
+- **Draft.js**: Rich text editor for crafting letters.
+- **Toastify**: For displaying toast notifications.
+- **CSS**: Styling for the user interface.
+- **gapi**: Google's JavaScript API for interacting with Google services.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Sign in with Google authentication.
+- Write and edit letters using a rich text editor.
+- Upload files to Google Drive (under a specific folder).
+- Logout functionality.
 
-## Expanding the ESLint configuration
+## Installation Guide
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (>= 14.x)
+- Firebase Project with Firebase Authentication enabled
+- Google Cloud Project with OAuth 2.0 credentials (Client ID for Google Sign-In)
+- Google Drive API enabled in the Google Cloud Project
+
+### Steps to Set Up the Project Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/lettersync.git
+   cd lettersync
